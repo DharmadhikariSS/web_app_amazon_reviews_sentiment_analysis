@@ -3,9 +3,6 @@ import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
-from nltk.corpus import stopwords 
-from textblob import TextBlob
-from textblob import Word
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 def app():
@@ -31,8 +28,5 @@ def app():
                 st.success ("The Sentiment is Neutral😐😐")
             elif sentiment_dict['compound'] > 0.32  and sentiment_dict['compound'] <= 1: 
                 st.success ("The Sentiment is Positive😊😊")
-            
-
-
         
             
