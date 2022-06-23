@@ -1,8 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-from matplotlib import pyplot as plt
-#from pickle import dump,load
 import requests
 from bs4 import BeautifulSoup
 
